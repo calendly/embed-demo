@@ -1,0 +1,14 @@
+<h1>Please select an event type to book with {{user}}</h1>
+<form action="embed" method="post" id="eventTypeForm">
+    <p>
+        <label for="url">Event Type:</label>
+        <select name="url" id="url" form="eventTypeForm">
+            {{#each eventTypes}}
+            <option value="{{this.url}}">{{this.name}}</option>
+            {{/each}}
+        </select>>
+    </p>
+    <p>
+        <input type="submit" value="Submit" />
+    </p>
+</form>
